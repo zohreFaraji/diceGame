@@ -72,7 +72,7 @@ const switchPlayer = function () {
 };
 
 const checkWinner = function () {
-  if (Number(scorePlayer0.textContent) >= 20) {
+  if (Number(scorePlayer0.textContent) >= 100) {
     player1.classList.add("player--active");
     player0.classList.add("player--winner");
     namePlayer0.classList.add("name");
@@ -83,7 +83,7 @@ const checkWinner = function () {
     hold.setAttribute("disabled", true);
     startConfetti();
     successAudio.play();
-  } else if (Number(scorePlayer1.textContent) >= 20) {
+  } else if (Number(scorePlayer1.textContent) >= 100) {
     player0.classList.add("player--active");
     player1.classList.add("player--winner");
     namePlayer1.classList.add("name");
