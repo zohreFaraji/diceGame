@@ -222,14 +222,12 @@ main {
       > i {
         color: black;
         font-size: 20px;
-        &:hover {
-          color: white;
-        }
       }
 
       &:hover {
         transform: scale(1.08);
-        background-color: #fd7393;
+        /* background-color: #fd7393; */
+        background-color: yellow;
         border: 3px solid white;
         color: white;
         filter: hue-rotate(40%) brightness(110%) contrast(120%);
